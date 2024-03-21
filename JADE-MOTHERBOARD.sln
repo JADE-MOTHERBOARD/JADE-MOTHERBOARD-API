@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JADE-MOTHERBOARD.Api", "JADE-MOTHERBOARD.Api\JADE-MOTHERBOARD.Api.csproj", "{764D9809-0A8A-42C7-8D3C-E5EE993DD4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JADE-MOTHERBOARD.Domain", "JADE-MOTHERBOARD.Domain\JADE-MOTHERBOARD.Domain.csproj", "{C4C10CE9-D738-49DF-9C2A-19B1FC7E3DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{764D9809-0A8A-42C7-8D3C-E5EE993DD4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764D9809-0A8A-42C7-8D3C-E5EE993DD4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764D9809-0A8A-42C7-8D3C-E5EE993DD4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764D9809-0A8A-42C7-8D3C-E5EE993DD4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C10CE9-D738-49DF-9C2A-19B1FC7E3DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C10CE9-D738-49DF-9C2A-19B1FC7E3DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C10CE9-D738-49DF-9C2A-19B1FC7E3DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C10CE9-D738-49DF-9C2A-19B1FC7E3DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
