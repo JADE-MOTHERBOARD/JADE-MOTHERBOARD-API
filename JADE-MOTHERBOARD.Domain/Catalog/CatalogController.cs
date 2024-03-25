@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Jade.Motherboard.Domain.Catalog;
+using Jade.Motherboard.Data;
+
 
 namespace Jade.Motherboard.Api.Controllers
 {
@@ -7,7 +9,13 @@ namespace Jade.Motherboard.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
+        
+        private readonly SocketsHttpPlaintextStreamFilterContext _db;
 
+        public CatalogController(SocketsHttpPlaintextStreamFilterContext db)
+        {
+            _db = db;
+        }
     [HttpGet]
     public IActionResult GetItems()
     {
