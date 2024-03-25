@@ -8,8 +8,6 @@ namespace Jade.Motherboard.Api.Controllers
     public class CatalogController : ControllerBase
     {
 
-    }
-
     [HttpGet]
     public IActionResult GetItems()
     {
@@ -21,4 +19,7 @@ namespace Jade.Motherboard.Api.Controllers
         
         return Ok("hello world.");
     }
+
+    }
+
 }
