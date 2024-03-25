@@ -7,18 +7,17 @@ namespace Jade.Motherboard.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
-
-    [HttpGet]
-    public IActionResult GetItems()
-    {
-        var items = new List<Item>()
+        [HttpGet]
+        public IActionResult GetItems()
         {
-            new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m),
-            new Item("Shorts", "Ohio State shorts.", "Nike", 4499m)
-        };
-        
-        return Ok("hello world.");
-    }
+            var items = new List<Item>()
+            {
+                new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m),
+                new Item("Shorts", "Ohio State shorts.", "Nike", 4499m)
+            };
+            
+            return Ok("hello world.");
+        }
 
     }
 
