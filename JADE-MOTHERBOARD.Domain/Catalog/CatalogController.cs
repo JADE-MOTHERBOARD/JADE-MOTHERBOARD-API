@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Jade.Motherboard.Domain.Catalog;
-using Jade.Motherboard.Data;
+//using Jade.Motherboard.Data;
 
 
 namespace Jade.Motherboard.Api.Controllers
