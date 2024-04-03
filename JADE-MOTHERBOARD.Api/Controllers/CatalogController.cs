@@ -47,6 +47,12 @@ namespace Jade.Motherboard.Api.Controllers
             return NoContent();
         }
 
+        
+       [HttpDelete("{id:int}")]
+        public IActionResult Delete(int id) {
+            return NoContent();
+        }
+
 
     }
 
