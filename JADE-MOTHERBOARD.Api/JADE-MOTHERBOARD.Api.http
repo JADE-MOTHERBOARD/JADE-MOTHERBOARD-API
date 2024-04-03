@@ -1,4 +1,4 @@
-@jade_motherboard.api_HostAddress = http://localhost:5175
+@jade_motherboard.api_HostAddress = http://localhost:5121
 
 GET {{jade_motherboard.api_HostAddress}}/weatherforecast/
 Accept: application/json
