@@ -6,7 +6,7 @@ using Jade.Motherboard.Data;
 namespace Jade.Motherboard.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/catalog")]
     public class CatalogController : ControllerBase
     {
         private readonly StoreContext _db;
