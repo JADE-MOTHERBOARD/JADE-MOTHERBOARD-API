@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "test",
+            "group": "Parent/Sub",
+            "database": "${workspaceFolder:JADE-MOTHERBOARD-API}/Registrar.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

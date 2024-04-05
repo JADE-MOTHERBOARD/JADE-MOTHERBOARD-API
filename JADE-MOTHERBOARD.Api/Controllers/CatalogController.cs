@@ -1,13 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Jade.Motherboard.Domain.Catalog;
+using Jade.Motherboard.Data;
 
 
 namespace Jade.Motherboard.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/catalog")]
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext _db;
+        public CatalogController(StoreContext db){
+            _db = db;
+        }
+        /*
         [HttpGet]
         public IActionResult GetItems()
         {
@@ -17,6 +23,13 @@ namespace Jade.Motherboard.Api.Controllers
                 new Item("Shorts", "Ohio State shorts.", "Nike", 4499m)
             };
             return Ok(items);
+        }
+        */
+
+        [HttpGet]
+        public IActionResult GetItems()
+        {
+            return Ok(_db.Items);
         }
 
         [HttpGet("{id:int}")]
