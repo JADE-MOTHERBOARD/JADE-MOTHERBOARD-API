@@ -31,7 +31,7 @@ namespace Jade.Motherboard.Api.Controllers
         {
             return Ok(_db.Items);
         }
-
+        /*
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id)
         {
@@ -39,7 +39,17 @@ namespace Jade.Motherboard.Api.Controllers
             item.Id = id;
             return Ok(item);
         }
-
+        */
+         [HttpGet("{id:int}")]
+        public IActionResult GetItem(int id)
+        {
+            var item = _db.Items.Find(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return Ok(item);
+        }
 
         [HttpPost]
         public IActionResult Post(Item item) {
