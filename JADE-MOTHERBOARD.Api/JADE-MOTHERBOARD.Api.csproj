@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JADE-MOTHERBOARD.Domain\JADE-MOTHERBOARD.Domain.csproj" />
+    <ProjectReference Include="..\JADE-MOTHERBOARD.Data\JADE-MOTHERBOARD.Data.csproj" />
   </ItemGroup>
 
 </Project>
