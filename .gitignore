@@ -5,6 +5,7 @@
 
 # exclude database files
 Registrar.sqlite
+
 # dotenv files
 .env
 
