@@ -40,6 +40,7 @@ namespace Jade.Motherboard.Domain.Catalog
             this.Description = description;
             this.Brand = brand;
             this.Price = price;
+            this.Ratings = new List<Rating>();
         }
 
     }
