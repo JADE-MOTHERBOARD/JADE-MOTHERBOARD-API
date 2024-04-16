@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Jade.Motherboard.Domain.Catalog;
 using Jade.Motherboard.Data;
+using Microsoft.AspNetCore.Authorization;
+using Jade.Motherboard.Api.Security;
 
 
 namespace Jade.Motherboard.Api.Controllers
@@ -104,6 +106,7 @@ namespace Jade.Motherboard.Api.Controllers
         }
         
        [HttpDelete("{id:int}")]
+       [Authorize("delete:catalog")]
         public IActionResult Delete(int id) {
             var item = _db.Items.Find(id);
             if (item == null) {
