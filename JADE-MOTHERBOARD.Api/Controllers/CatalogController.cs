@@ -4,7 +4,6 @@ using Jade.Motherboard.Data;
 using Microsoft.AspNetCore.Authorization;
 using Jade.Motherboard.Api.Security;
 
-//comment
 
 namespace Jade.Motherboard.Api.Controllers
 {
