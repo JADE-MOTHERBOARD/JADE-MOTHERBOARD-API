@@ -58,6 +58,7 @@ namespace Jade.Motherboard.Api.Controllers
             return Created("/catalog/42", item);
         }
         */
+        [HttpPost]
          public IActionResult Post(Item item) {
             _db.Items.Add(item);
             _db.SaveChanges();
